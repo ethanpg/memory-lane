@@ -106,11 +106,11 @@ textarea {
     margin: 1em;
 }
 
-ul {
+.nav ul {
     list-style: none;
 }
 
-li {
+.nav li {
     display: inline;
     margin-right: 2em;
 }
@@ -121,6 +121,10 @@ li {
 }
 
 
+.aboutus {
+    margin: 3em;
+    max-width: 600px;
+}
 
 
 
