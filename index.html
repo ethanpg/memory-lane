@@ -20,21 +20,31 @@
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-    
-        <ul class="nav">
-            <li><span class="locationButton" data-pano="6xCnRwAoMAdKuPzjd3WGsA">Capitol Hill</span></li>
-            <li><span class="locationButton" data-pano="PGXY5OSVn9ghM65KJcCT4A">Ballard</span></li>
-            <li><span class="locationButton" data-pano="Fy3f2BOFNtC8os1nQ8OHmQ">South Lake Union</span></li>
-        </ul>
 
-        <div id="pano1"></div>
-
-        <div id="pano2"></div>
-
-        <div class="aboutus">
+        <header>
             <h2>Memory Lane</h2>
             <h3>Visualizing land use change and development</h3>
-            <p>A Community Art Project developed in 7 hours at the Seattle Art + Civics + Code Hackathon by all-star team Ethan Phelps-Goodman, Allie Sterling, Rob Middleton, and Paul Ort. 12/15/2014</p>
+        </header>
+
+        <ul class="nav">
+            <li><button class="locationButton" data-pano="6xCnRwAoMAdKuPzjd3WGsA">Capitol Hill</button></li>
+            <li><button class="locationButton" data-pano="PGXY5OSVn9ghM65KJcCT4A">Ballard</button></li>
+            <li><button class="locationButton" data-pano="Fy3f2BOFNtC8os1nQ8OHmQ">South Lake Union</button></li>
+            <li><button class="show-streetwalk">Replay Video</button></li>
+        </ul>
+
+        <section class="panos">
+            <div id="pano1"></div><!-- inline-block, no whitespace here
+            --><div id="pano2"></div>
+        </section>
+
+        <section class="fullscreen-video">
+            <button class="close-video">X</button>
+            <video class="streetwalk" src="streetwalk_both.mp4" controls autoplay></video>
+        </section>
+
+        <div class="aboutus">
+            <p>Memory Lane is a Community Art Project developed in 7 hours at the Seattle Art + Civics + Code Hackathon by all-star team Ethan Phelps-Goodman, Allie Sterling, Rob Middleton, and Paul Ort. 12/15/2014</p>
             <p>Features</p>
             <ul>
                 <li>Take a virtual walk through three neighborhoods in 2007 and 2014 – synced side by side.</li>

@@ -97,13 +97,84 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
 
+
+button {
+    background: 0;
+    border: 0;
+}
+
+header {
+    padding: 0 3em;
+}
+
+.fullscreen-video {
+    background: black;
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100; /* panos use z-index :( */
+}
+
+.close-video {
+    background: white;
+    border: 0;
+    border-radius: 100px;
+    font-size: 20px;
+    padding: 4px 10px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.streetwalk {
+    height: 100%;
+    width: 100%;
+}
+
+.panos {
+    background: #464646;
+    height: 400px;
+    height: 75vh;
+}
 
 #pano1, #pano2 {
-    width: 600px;
-    height: 400px;
     display: inline-block;
-    margin: 1em;
+    vertical-align: top;
+    height: 96%;
+    margin: 1%;
+    width: 48.5%;
+}
+#pano1 {
+    margin-right: 0.5%;
+}
+#pano2 {
+    margin-left: 0.5%;
+}
+@media (max-width: 600px) {
+    .panos {
+        height: 100vh;
+    }
+
+    /* vertical layout for skinny screens */
+    #pano1, #pano2 {
+        height: 48.5%;
+        margin: 1%;
+        width: 98%;
+    }
+    #pano1 {
+        margin-bottom: 0.5%;
+    }
+    #pano2 {
+        margin-top: 0.5%;
+    }
 }
 
 .nav ul {
@@ -115,18 +186,11 @@ textarea {
     margin-right: 2em;
 }
 
-.locationButton {
-    text-decoration: underline;
-    color: blue;
-}
-
 
 .aboutus {
     margin: 3em;
     max-width: 600px;
 }
-
-
 
 
 

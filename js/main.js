@@ -67,3 +67,26 @@ function initialize() {
 }
 
 google.maps.event.addDomListener(window, 'load', initialize);
+
+
+// Video
+
+$('.close-video').on('click', closeVideo)
+$('.streetwalk').on('ended', closeVideo)
+$('.show-streetwalk').click(openVideo)
+
+function closeVideo () {
+  // If user re-opens video, don't close it when video ends
+  $('.streetwalk').off('ended', closeVideo)
+  $('.streetwalk')[0].pause()
+
+  $('.fullscreen-video').fadeOut(400, function () {
+    $(this).hide()
+  })
+}
+
+function openVideo () {
+  $('.fullscreen-video').show()
+  $('.streetwalk')[0].currentTime = 0
+  $('.streetwalk')[0].play()
+}
