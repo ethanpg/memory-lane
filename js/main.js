@@ -1,11 +1,12 @@
 
 function initialize() {
   var panoramaOptions = {
-    pano: '6xCnRwAoMAdKuPzjd3WGsA',
     pov: {
-      heading: 270,
-      pitch: 0
+      heading: 86.87475001019146,
+      pitch: 12.290950042221624,
+      zoom: 1
     },
+    pano: 'ISocJjqdFmmrm_P5qDLM9Q',
     visible: true,
     imageDateControl: true
   };
